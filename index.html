@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أدريان — حلّل ونفّذ واحمِ صفقتك من الشارت مباشرة</title>
+<meta name="description" content="أدريان منصة تداول عربية مربوطة بحسابك على MetaTrader 5: تنشئ الصفقة من الشارت بالمبلغ الدقيق، ويحرسها أدريان بالتأمين والإيقاف الذكي والملاحقة، وتتحكم بها من تيليجرام.">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="assets/img/adrian.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css?v=3">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3 3 10.5l6.8 2.7L21 3Zm0 0-7.5 18-3.7-7.8"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10H9l-5 4v-14Z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.2 3 7.8 7 9.5 4-1.7 7-5.3 7-9.5V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2.5-6 4 12 2.5-6h6"/></symbol>
+    <symbol id="i-trail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9"/><path d="M3 21h4v-3h4v-3h4v-3h4"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-win" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.2 3 7.8 7 9.5 4-1.7 7-5.3 7-9.5V6l-7-3Z"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 4 2.4 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6L12 4Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="assets/img/adrian.svg" alt="" width="34" height="34">أدريان</a>
+    <nav class="nav" aria-label="أقسام الصفحة">
+      <a href="#after">بعد الدخول</a>
+      <a href="#problem">لماذا أدريان</a>
+      <a href="#features">كل المميزات</a>
+      <a href="#price">السعر</a>
+      <a href="#faq">أسئلة</a>
+    </nav>
+    <a class="btn btn-gold" href="#price"><svg><use href="#i-down"/></svg>حمّل أدريان</a>
+  </div>
+</header>
+
+<main>
+<!-- ===================================================== hero -->
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="wrap hero-copy">
+    <h1 id="h1"><span class="reveal-line"><span>تخاطر بـ 20 دولاراً؟</span></span><span class="reveal-line"><span class="l2">تخسر 20 دولاراً. ليس 21، ولا 18.</span></span></h1>
+    <p class="lead">أدريان منصة تداول عربية مربوطة بحسابك على MetaTrader 5. تحلّل على الشارت، وتنشئ صفقتك من الشارت بالمبلغ الذي تختاره، ثم يحرس أدريان صفقتك ويخبرك على هاتفك.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold btn-big" href="#price"><svg><use href="#i-down"/></svg>حمّل أدريان</a>
+      <a class="btn btn-big" href="#demo" id="tryBtn">جرّب إنشاء صفقة هنا</a>
+    </div>
+  </div>
+
+  <div class="wrap" id="demo">
+    <div class="term" role="group" aria-label="تجربة إنشاء صفقة">
+      <div class="term-bar">
+        <span class="sym">XAUUSD<small>ذهب</small></span>
+        <span class="tfs" aria-hidden="true"><span>M1</span><span class="on">M5</span><span>M15</span><span>H1</span><span>H4</span></span>
+        <span class="demo-tag">عرض توضيحي</span>
+        <span class="px num" id="hPx">—</span>
+      </div>
+      <div class="term-body">
+        <div class="chart-host" id="heroHost">
+          <canvas id="heroCv" aria-label="شارت الذهب مع خطوط الصفقة"></canvas>
+          <div class="chart-hint" id="hint">اسحب <b>خط الوقف الأحمر</b> للأعلى أو للأسفل، وراقب الحجم يتغيّر والخسارة تبقى كما هي.</div>
+        </div>
+        <form class="ticket" id="ticket" onsubmit="return false">
+          <h3>إنشاء صفقة <small class="num">XAUUSD</small></h3>
+          <div class="pre">
+            <div class="side" role="group" aria-label="الاتجاه">
+              <button type="button" class="buy" data-side="1" aria-pressed="true">شراء</button>
+              <button type="button" class="sell" data-side="-1" aria-pressed="false">بيع</button>
+            </div>
+            <label class="field"><span>كم تقبل أن تخسر في هذه الصفقة؟</span>
+              <span class="money-in"><i>$</i><input id="risk" inputmode="decimal" value="20" aria-label="المخاطرة بالدولار"></span>
+            </label>
+            <div class="chips" id="riskChips" role="group" aria-label="مبالغ جاهزة">
+              <button type="button" data-v="10" aria-pressed="false">10$</button>
+              <button type="button" data-v="20" aria-pressed="true">20$</button>
+              <button type="button" data-v="50" aria-pressed="false">50$</button>
+              <button type="button" data-v="100" aria-pressed="false">100$</button>
+            </div>
+            <div class="field"><span>كم ضعفاً تريد أن تربح مقابل مخاطرتك؟</span>
+              <div class="chips" id="rrChips" role="group" aria-label="الهدف">
+                <button type="button" data-v="1" aria-pressed="false">×1</button>
+                <button type="button" data-v="2" aria-pressed="false">×2</button>
+                <button type="button" data-v="3" aria-pressed="true">×3</button>
+                <button type="button" data-v="4" aria-pressed="false">×4</button>
+                <button type="button" data-v="5" aria-pressed="false">×5</button>
+              </div>
+            </div>
+            <div class="readout">
+              <div class="loss"><span>الخسارة عند الوقف</span><b id="rLoss">−20.00$</b></div>
+              <div class="win"><span>الربح عند الهدف</span><b id="rWin">+60.00$</b></div>
+              <div><span>حجم الصفقة</span><b id="rLot">0.07 لوت</b></div>
+            </div>
+            <p class="snap-note" id="snap" aria-live="polite">الحجم يُحسب وحده، والوقف يُضبط حتى تكون الخسارة هي المبلغ الذي كتبته بالضبط.</p>
+            <button type="button" class="exec buy" id="exec">نفّذ صفقة الشراء</button>
+          </div>
+          <div class="live-state" aria-live="polite">
+            <div class="pl-now"><span>ربحك الآن</span><b class="num" id="plNow">0.00$</b></div>
+            <div class="state-row" id="st1"><svg><use href="#i-check"/></svg><span>الصفقة مفعّلة. الخسارة القصوى <b class="num" id="stRisk">20.00$</b> مهما تحرّك السعر عند التنفيذ.</span></div>
+            <div class="state-row" id="st2"><svg><use href="#i-check"/></svg><span>الحارس: عندما ربحت الصفقة بقدر ما خاطرت به، نقل الوقف إلى سعر دخولك. صفقتك الآن لا تخسر.</span></div>
+            <div class="state-row" id="st3"><svg><use href="#i-check"/></svg><span id="st3t">وصل السعر إلى الهدف وأُغلقت الصفقة.</span></div>
+            <button type="button" class="btn again" id="again">جرّب صفقة أخرى</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="below-term">الأسعار هنا محاكاة للتجربة فقط. في البرنامج تأتي الأسعار من حسابك لحظة بلحظة، والضغط على «نفّذ» يرسل الصفقة فعلاً إلى MetaTrader 5.</p>
+  </div>
+</section>
+
+<!-- ===================================================== after the click -->
+<section class="sec" id="after" aria-labelledby="afterH">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="afterH">بعد أن تضغط «نفّذ»، أدريان لا يتركك.</h2>
+      <p class="lead">خمسة أشياء تعمل لصالحك وأنت بعيد عن الشاشة. اختر واحداً لترى كيف يعمل.</p>
+    </div>
+    <div class="pillars">
+      <div class="p-tabs" role="tablist" aria-label="ما يحدث بعد الدخول">
+        <button class="p-tab" role="tab" id="pt-tg" aria-controls="pp-tg" aria-selected="true"><strong><svg><use href="#i-send"/></svg>بوت تيليجرام</strong><span>لوحة حية بصفقاتك على هاتفك، وتحكم كامل بالأزرار والصوت.</span><div class="bar"><i></i></div></button>
+        <button class="p-tab" role="tab" id="pt-ai" aria-controls="pp-ai" aria-selected="false" tabindex="-1"><strong><svg><use href="#i-chat"/></svg>مساعد تسأله عن صفقتك</strong><span>يرى الشارت وصفقتك والأخبار، ويجيبك، وينفّذ ما تطلبه بالكلام.</span><div class="bar"><i></i></div></button>
+        <button class="p-tab" role="tab" id="pt-pr" aria-controls="pp-pr" aria-selected="false" tabindex="-1"><strong><svg><use href="#i-shield"/></svg>تأمين الصفقة</strong><span>من لحظة الربح الأولى ينتقل الوقف لسعر دخولك.</span><div class="bar"><i></i></div></button>
+        <button class="p-tab" role="tab" id="pt-ss" aria-controls="pp-ss" aria-selected="false" tabindex="-1"><strong><svg><use href="#i-eye"/></svg>الإيقاف الذكي</strong><span>يقرأ كل شمعة تُغلق، ويعرف متى انتهت فكرة صفقتك.</span><div class="bar"><i></i></div></button>
+        <button class="p-tab" role="tab" id="pt-tr" aria-controls="pp-tr" aria-selected="false" tabindex="-1"><strong><svg><use href="#i-trail"/></svg>الملاحقة الذكية</strong><span>الربح يمشي، والوقف يلحقه ليحفظ ما ربحت.</span><div class="bar"><i></i></div></button>
+      </div>
+
+      <div class="p-stage">
+        <div class="p-panel on" role="tabpanel" id="pp-tg" aria-labelledby="pt-tg">
+          <div class="phone" aria-hidden="true">
+            <div class="phone-top"><img src="assets/img/adrian.png" alt=""><div><b>أدريان</b><small>بوت · متصل</small></div></div>
+            <div class="chat" id="tgChat">
+              <div class="msg">لوحتك الآن
+                <span class="num" style="display:block;margin-top:4px">10,412.30$</span><span style="color:var(--dim)">العائم</span> <span class="num" style="color:#6fd08f">+46.20$</span> · <span style="color:var(--dim)">صفقتان مفتوحتان</span>
+                <div class="kb"><span>تأمين الكل</span><span>أغلق الرابحة</span><span>أوقف الآلي</span><span>تقرير اليوم</span></div>
+                <span class="t">تتحدث وحدها</span>
+              </div>
+              <div class="msg me"><span class="voice"><svg width="16" height="16"><use href="#i-dot"/></svg><i><b style="height:8px"></b><b style="height:14px"></b><b style="height:10px"></b><b style="height:16px"></b><b style="height:7px"></b><b style="height:12px"></b><b style="height:9px"></b></i> 0:04</span><span class="t">رسالة صوتية</span></div>
+              <div class="msg">فهمت: انقل وقف صفقة الذهب إلى سعر الدخول.
+                <div class="kb"><span>تأكيد</span><span>إلغاء</span></div>
+              </div>
+              <div class="msg">تم. صفقة الذهب الآن لا تخسر.</div>
+              <div class="msg alert">تنبيه: وصلت إلى 80% من حد الخسارة اليومي الذي وضعته.</div>
+            </div>
+          </div>
+          <p class="cap">اكتب له بالعربي أو أرسل رسالة صوتية، وأرسل له صورة أي شارت ليحللها. تنبيهات الخطر تصلك حتى في ساعات الهدوء، ويمكنك قفله على «مراقبة فقط».</p>
+        </div>
+
+        <div class="p-panel" role="tabpanel" id="pp-ai" aria-labelledby="pt-ai" hidden>
+          <div class="assist" id="aiBox">
+            <div class="q">صفقة الشراء على الذهب رابحة 38$. هل أغلقها؟</div>
+            <div class="a"><div class="who"><img src="assets/img/adrian.svg" alt="">أدريان</div><span id="aiText"></span></div>
+            <div class="acts" id="aiActs"><span class="go">نفّذ: انقل الوقف إلى 2,388.00</span><span>لا، اتركها</span></div>
+            <div class="q">راقب لي اليورو ونبّهني عند 1.0950</div>
+            <div class="a"><div class="who"><img src="assets/img/adrian.svg" alt="">أدريان</div><span id="aiText2"></span></div>
+          </div>
+          <p class="cap">اسأله عن أي صفقة مفتوحة، أو كلّمه كما تكلّم إنساناً: افتح، أغلق، انقل الوقف، نبّهني. لا ينفّذ شيئاً قبل أن تؤكّد.</p>
+        </div>
+
+        <div class="p-panel" role="tabpanel" id="pp-pr" aria-labelledby="pt-pr" hidden>
+          <h3>من لحظة الربح الأولى… صفقتك لا تخسر.</h3>
+          <div class="p-canvas"><canvas id="cvPr"></canvas></div>
+          <p class="cap">زر واحد على الصفقة. عندما تربح بقدر ما خاطرت به، ينتقل الوقف إلى سعر دخولك. تختار أنت متى يحدث ذلك، ويمكنه أن يأخذ جزءاً من الربح ويترك الباقي يكمل.</p>
+        </div>
+
+        <div class="p-panel" role="tabpanel" id="pp-ss" aria-labelledby="pt-ss" hidden>
+          <h3>الوقف الذي يفهم لماذا دخلت.</h3>
+          <div class="p-canvas"><canvas id="cvSs"></canvas></div>
+          <div class="meter" aria-live="polite"><span class="watch" data-m="0">يراقب</span><span class="warn" data-m="1">يحذّر ويقترح إغلاق النصف</span><span class="exit" data-m="2">يخرج</span></div>
+          <p class="cap">يفرّق بين رجوع طبيعي للسعر وبين فشل فكرة الصفقة: إغلاق خلف المنطقة، شمعة اندفاع عكسية، تغيّر في اتجاه السوق. ولا يتحرك أبداً على شمعة لم تكتمل.</p>
+        </div>
+
+        <div class="p-panel" role="tabpanel" id="pp-tr" aria-labelledby="pt-tr" hidden>
+          <h3>الربح يمشي، والوقف يلحقه.</h3>
+          <div class="p-canvas"><canvas id="cvTr"></canvas></div>
+          <p class="cap">ثلاث طرق للملاحقة: حسب حركة السوق المعتادة، أو خلف آخر قاع أو قمة، أو بمسافة ثابتة من أعلى نقطة. ويمكن أن يبقى وقفك الحقيقي مخفياً عن الوسيط.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== problem -->
+<section class="sec" id="problem" aria-labelledby="probH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="probH">ثلاث نوافذ لتفتح صفقة واحدة؟</h2>
+      <p class="lead">منصات الرسم الشائعة ممتازة في الرسم. لكن التداول نفسه يحدث في مكان آخر، وبينهما تضيع الدقة.</p>
+    </div>
+    <div class="versus">
+      <div class="vs-card">
+        <h3>الطريقة المعتادة</h3>
+        <div class="wins" aria-hidden="true">
+          <div class="wnd">منصة الرسم<b>1:3</b>رسمت الصفقة</div>
+          <div class="wnd">MetaTrader 5<b class="num">0.06</b>حجم أدخلته بيدك</div>
+          <div class="wnd">الآلة الحاسبة<b class="bad num">−18.56$</b>الخسارة الفعلية</div>
+        </div>
+        <p>تنسخ الأسعار بيدك، تحسب الحجم وتقرّبه، ثم يتحرك السعر لحظة التنفيذ. والنتيجة رقم لم تختره.</p>
+      </div>
+      <div class="vs-card good">
+        <h3>مع أدريان</h3>
+        <div class="one"><b>−20.00$</b><span>الخسارة التي كتبتها، عند الوقف تماماً</span></div>
+        <p>نافذة واحدة. ترسم الصفقة فتُحسب وتُرسل، ثم يُعاد ضبط الوقف على السعر الذي نُفّذت عليه فعلاً.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:18px">ما ينقص منصات الرسم مثل تريدنغ فيو، وما يفعله أدريان بالضبط</h3>
+    <div class="pain" id="pain"></div>
+    <button class="btn pain-more" id="painMore" type="button">اعرض كل المشاكل الثماني عشرة</button>
+    <p class="pain-note">المقارنة وصفية مع منصات الرسم الشائعة مثل تريدنغ فيو، وبعض حدودها يختلف حسب الخطة المشترَك بها.</p>
+  </div>
+</section>
+
+<!-- ===================================================== journey -->
+<section class="sec" id="journey" aria-labelledby="jH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="jH">رحلة صفقة واحدة، من الفكرة إلى الدرس.</h2>
+      <p class="lead">كل خطوة في نفس النافذة. مرّر للأسفل وتابع الشارت.</p>
+    </div>
+    <div class="journey">
+      <div class="j-stage"><canvas id="cvJ"></canvas><div class="j-pop" id="jPop"></div></div>
+      <div class="j-steps">
+        <article class="j-step" data-step="0"><span class="k">قبل أن تبدأ</span><h3>بوصلة اليوم والأخبار القادمة.</h3><p>هل اليوم يميل للصعود أو الهبوط؟ وهل هناك خبر قوي بعد ساعة؟ تعرف قبل أن تفكر في الدخول.</p></article>
+        <article class="j-step" data-step="1"><span class="k">التحليل</span><h3>أدريان يرسم أين تحرّكت أموال الكبار.</h3><p>المناطق والفجوات والسيولة مرسومة بزر واحد، ولكل منطقة «لماذا؟» بأسباب واضحة.</p></article>
+        <article class="j-step" data-step="2"><span class="k">الانتظار</span><h3>جرس على المنطقة، وأنت تعمل شيئاً آخر.</h3><p>أدريان يتابع اقتراب السعر: بعيد، يقترب، يختبر المنطقة. ويرنّ لك عندما يحين وقتك.</p></article>
+        <article class="j-step" data-step="3"><span class="k">القرار</span><h3>الدستور يوقفك قبل أن تخطئ.</h3><p>قواعدك تُفحص قبل كل صفقة. إن كانت هذه صفقتك الرابعة اليوم، أو قبل خبر قوي، سيخبرك أدريان ولك أن تقرر عن وعي.</p></article>
+        <article class="j-step" data-step="4"><span class="k">الدخول</span><h3>تذكرة الصفقة بالمبلغ الدقيق.</h3><p>الخسارة عند الوقف هي ما كتبته، والهدف محسوب بنفس الدقة، والتظليل تحت الشموع لا يغطيها.</p></article>
+        <article class="j-step" data-step="5"><span class="k">الإدارة</span><h3>التأمين والملاحقة، ورسالة على هاتفك.</h3><p>الحارس ينقل الوقف لسعر دخولك ثم يلاحق الربح، وتيليجرام يخبرك بكل خطوة.</p></article>
+        <article class="j-step" data-step="6"><span class="k">بعد الصفقة</span><h3>أعِدها شمعة بشمعة، وخذ الدرس.</h3><p>شاهد صفقتك كأنها تحدث الآن، واقرأ تقريرها، واحفظ درسها في سجلك ليذكّرك به أدريان لاحقاً.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== time machine + screens -->
+<section class="sec" id="train" aria-labelledby="tH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="tH">تدرّب في الماضي، وانظر لكل الإطارات معاً.</h2>
+    </div>
+    <div class="duo">
+      <div class="tool">
+        <h3>آلة الزمن</h3>
+        <p>ارجع لأي لحظة، وافتح صفقة تدريب بنفس الأزرار، ثم شغّل الشموع وشاهد ماذا كان سيحدث. بلا دولار واحد.</p>
+        <div class="cv"><canvas id="cvTm"></canvas></div>
+        <div class="tm-ctrl">
+          <input type="range" id="tmCut" min="40" max="150" value="96" aria-label="اسحب للرجوع بالزمن">
+          <button class="btn" type="button" id="tmTrade">صفقة تدريب</button>
+          <button class="btn" type="button" id="tmPlay">شغّل الشموع</button>
+        </div>
+        <p class="tm-res" id="tmRes" aria-live="polite">اسحب المؤشر لتختار لحظة في الماضي.</p>
+      </div>
+      <div class="tool">
+        <h3>أربع شاشات تتحرك معاً</h3>
+        <p>نفس الزوج على أربعة إطارات زمنية. حرّك الماوس على أي شاشة، فيتبعك خط التقاطع في الأربع.</p>
+        <div class="grid4" id="grid4">
+          <div class="cell"><em>M5</em><canvas></canvas></div>
+          <div class="cell"><em>M15</em><canvas></canvas></div>
+          <div class="cell"><em>H1</em><canvas></canvas></div>
+          <div class="cell"><em>H4</em><canvas></canvas></div>
+        </div>
+        <p class="tm-res">وكل شاشة تُظهر صفقاتك ومؤشراتها الخاصة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== features -->
+<section class="sec" id="features" aria-labelledby="fH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="fH">250 ميزة. ابحث عمّا تحتاجه.</h2>
+      <p class="lead">كل مربع ميزة حقيقية في البرنامج، برقمها. اختر ما تريد أن تفعله، أو اكتب كلمة.</p>
+    </div>
+    <div class="fx-tools">
+      <label class="fx-search"><svg><use href="#i-search"/></svg><span class="sr">ابحث في المميزات</span><input id="fxQ" type="search" placeholder="جرّب: وقف، تيليجرام، ICT، الزمن"></label>
+      <div class="intents" id="fxI" role="group" aria-label="ماذا تريد أن تفعل">
+        <button type="button" data-i="" aria-pressed="true">الكل</button>
+        <button type="button" data-i="analyze" aria-pressed="false">أحلّل</button>
+        <button type="button" data-i="enter" aria-pressed="false">أدخل</button>
+        <button type="button" data-i="manage" aria-pressed="false">أحمي وأدير</button>
+        <button type="button" data-i="train" aria-pressed="false">أتدرّب</button>
+        <button type="button" data-i="auto" aria-pressed="false">أؤتمت</button>
+        <button type="button" data-i="learn" aria-pressed="false">أتعلّم وأتابع</button>
+      </div>
+    </div>
+    <p class="fx-count" id="fxCount" aria-live="polite"></p>
+    <div class="fx-map" id="fxMap" aria-label="خريطة المميزات"></div>
+    <div class="fx-groups" id="fxList"></div>
+    <p class="fx-empty" id="fxEmpty">لا توجد ميزة بهذه الكلمة. جرّب كلمة أبسط، مثل «وقف» أو «تنبيه».</p>
+    <div class="fx-tip" id="fxTip" role="tooltip"></div>
+  </div>
+</section>
+
+<!-- ===================================================== honesty -->
+<section class="sec honest" aria-labelledby="hH">
+  <div class="wrap honest-grid">
+    <blockquote id="hH">نقيس، ولا نعد.<span>أدريان لا يبيعك ربحاً.</span></blockquote>
+    <div>
+      <p class="lead">يبيعك السيطرة: مبلغ دقيق، وحماية بعد الدخول، وتدريب بلا خسارة، وقواعد تحميك من نفسك.</p>
+      <ul>
+        <li><svg><use href="#i-check"/></svg>كل تحليل في أدريان يرى فقط ما كان معروفاً وقتها، ولا يغيّر رسمه في الماضي.</li>
+        <li><svg><use href="#i-check"/></svg>نختبر الأنظمة على بيانات لم ترها. وعندما لا تتفوق فكرة على الصدفة، نقول ذلك داخل البرنامج نفسه.</li>
+        <li><svg><use href="#i-check"/></svg>كل البوتات والإدخال الآلي مطفأة حتى تشغّلها أنت، وزر الطوارئ يوقف كل شيء.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== compare -->
+<section class="sec" id="compare" aria-labelledby="cH">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="cH">أدريان، ومنصة الرسم، وMetaTrader 5 وحده.</h2></div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th scope="col">ما تحتاجه</th><th scope="col" class="us">أدريان</th><th scope="col">منصات الرسم الشائعة</th><th scope="col">MetaTrader 5 وحده</th></tr></thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== price -->
+<section class="sec" id="price" aria-labelledby="prH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="prH">دفعة واحدة. وأول 100 عميل يحصلون على النسخة الدائمة.</h2></div>
+    <div class="price">
+      <div class="price-card">
+        <span class="offer"><svg><use href="#i-star"/></svg>عرض الإطلاق: نسخة دائمة لأول 100 عميل</span>
+        <div class="amount"><b>2,000$</b><span>مرة واحدة، بلا اشتراك شهري</span></div>
+        <ul class="what">
+          <li><svg><use href="#i-check"/></svg><span><b>ترخيص دائم</b> لا ينتهي، لأول مئة عميل.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>كل المميزات الـ 250</b>: الشارت، وإنشاء الصفقة، والحارس، وآلة الزمن، والبوتات، والمساعد الذكي.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>بوت تيليجرام</b> للتحكم والمراقبة من هاتفك.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>تحديثات تصلك داخل البرنامج</b>، مع «ما الجديد» بعد كل تحديث.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>بياناتك على جهازك</b>، لا على خوادم أحد.</span></li>
+        </ul>
+        <a class="btn btn-gold btn-big" id="dlBtn" href="https://github.com/mohammedmonir97/adrian-releases/releases/latest" rel="noopener"><svg><use href="#i-down"/></svg>حمّل أدريان لويندوز</a>
+        <p class="dl-meta" id="dlMeta">ويندوز 10 أو أحدث · يحتاج حساباً على MetaTrader 5</p>
+      </div>
+      <div>
+        <ol class="steps">
+          <li><div><h3>حمّل وثبّت</h3><p>ملف تثبيت واحد. البرنامج يرشدك خطوة بخطوة في أول تشغيل.</p></div></li>
+          <li><div><h3>اربط حسابك</h3><p>أدريان يجد MetaTrader 5 على جهازك، ويتحقق من الاتصال بزر واحد.</p></div></li>
+          <li><div><h3>ادفع وفعّل من داخل البرنامج</h3><p>الدفع يتم من داخل أدريان نفسه، والتفعيل يصلك فوراً.</p></div></li>
+        </ol>
+        <div class="defender">
+          <h3><svg><use href="#i-win"/></svg>ملاحظة صغيرة قبل التحميل</h3>
+          <p>أدريان إصدار جديد، وحماية ويندوز لا تعرف البرامج الجديدة بعد، لذلك قد تُظهر تحذيراً أو توقف الملف احتياطاً. هذا يحدث مع أي برنامج جديد، ولا يعني أن هناك مشكلة.</p>
+          <ol>
+            <li>إذا ظهرت نافذة <kbd>Windows protected your PC</kbd>: اضغط <kbd>More info</kbd> ثم <kbd>Run anyway</kbd>.</li>
+            <li>إذا أوقف Microsoft Defender الملف: افتح «أمان Windows» ← «الحماية من الفيروسات والمخاطر» ← «محفوظات الحماية»، واختر ملف أدريان ثم «السماح على الجهاز».</li>
+            <li>إذا استمر المنع: أوقف «الحماية في الوقت الحقيقي» مؤقتاً أثناء التحميل والتثبيت فقط، ثم أعد تشغيلها مباشرة بعد ذلك.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== faq -->
+<section class="sec" id="faq" aria-labelledby="qH" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="qH">أسئلة قبل الشراء</h2></div>
+    <div class="faq">
+      <details><summary>هل يعمل مع الوسيط الذي أتعامل معه؟<svg><use href="#i-plus"/></svg></summary><p>نعم، إذا كان الوسيط يعمل على MetaTrader 5. أدريان يتصل بحسابك من خلال MetaTrader 5 المثبّت على جهازك، فيرى أسعارك وصفقاتك ويرسل أوامرك إليه.</p></details>
+      <details><summary>هل يعمل على ماك أو على الهاتف؟<svg><use href="#i-plus"/></svg></summary><p>البرنامج يعمل على ويندوز 10 أو أحدث. أما الهاتف فتتحكم منه وتراقب صفقاتك عن طريق بوت تيليجرام.</p></details>
+      <details><summary>كيف أدفع؟<svg><use href="#i-plus"/></svg></summary><p>حمّل البرنامج وثبّته، ثم ادفع وفعّل من داخل أدريان. التفعيل يصلك فوراً على نفس الجهاز.</p></details>
+      <details><summary>ماذا تعني «النسخة الدائمة»؟<svg><use href="#i-plus"/></svg></summary><p>أول مئة عميل يحصلون على ترخيص لا ينتهي. تدفع مرة واحدة، والتحديثات تصلك داخل البرنامج.</p></details>
+      <details><summary>هل «المبلغ الدقيق» يشمل عمولة الوسيط؟<svg><use href="#i-plus"/></svg></summary><p>المبلغ الدقيق هو ربح أو خسارة الصفقة نفسها عند الوقف أو الهدف. عمولة الوسيط ورسوم إبقاء الصفقة لليوم التالي تُحسب عند الوسيط بشكل منفصل.</p></details>
+      <details><summary>هل المساعد الذكي يحتاج اشتراكاً إضافياً؟<svg><use href="#i-plus"/></svg></summary><p>المساعد يعمل بمفتاح Google Gemini خاص بك، ومعالج التشغيل الأول يشرح كيف تحصل عليه ويتحقق منه.</p></details>
+      <details><summary>ويندوز منع التحميل، ماذا أفعل؟<svg><use href="#i-plus"/></svg></summary><p>هذا طبيعي مع البرامج الجديدة. اضغط «More info» ثم «Run anyway»، أو اسمح للملف من «محفوظات الحماية» في «أمان Windows». الخطوات كاملة في قسم السعر أعلاه.</p></details>
+      <details><summary>هل يضمن لي أدريان الربح؟<svg><use href="#i-plus"/></svg></summary><p>لا. لا يوجد برنامج يضمن الربح، ومن يعدك بذلك لا يقول الحقيقة. أدريان يعطيك الدقة والحماية والتدريب والانضباط، والقرار يبقى لك.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="endH" style="padding-top:0">
+  <div class="wrap final">
+    <h2 id="endH">حلّل. اضغط. ادخل. وأدريان يحرس الباقي.</h2>
+    <a class="btn btn-gold btn-big" href="#price"><svg><use href="#i-down"/></svg>حمّل أدريان</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="risk">تحذير المخاطر: تداول العملات والذهب والمؤشرات بالرافعة المالية ينطوي على مخاطر عالية وقد تخسر كامل رأس مالك. أدريان أداة تحليل وتنفيذ وإدارة، وليس نصيحة استثمارية، ولا يضمن أي ربح. الأمثلة والأرقام في هذه الصفحة توضيحية.</p>
+    <div class="row"><span>© 2026 أدريان</span><span>MetaTrader 5 علامة تجارية لمالكها، وأدريان غير تابع لها.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/features.js?v=1"></script>
+<script src="assets/js/pain.js?v=1"></script>
+<script src="assets/js/chart.js?v=1"></script>
+<script src="assets/js/site.js?v=3"></script>
+</body>
+</html>
